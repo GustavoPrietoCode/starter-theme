@@ -1,0 +1,208 @@
+/* colores corporativos ALDI */
+:root
+{
+    --bluedark: #2b327a;
+    --red: #a82020;
+    --bluelight: #2d8bcb;
+    --white: #fff;
+}
+
+/* FONT CORPORATIVA ALDI */
+@font-face
+{
+    font-family: DINPROforBRM_Regular;
+    src: url(../fonts/DINPRO/DINPROforBRM\ Regular.ttf);
+}
+
+h1, p
+{
+    font-family: DINPROforBRM_Regular, sans-serif;
+}
+
+/**************** PAGE-POWERPILLS */
+/* MENÚ COURSES-CATEGORY RESPONSIVE SOLO PARA MÓVIL */
+.menu-movil
+{
+    background-color: var(--bluelight);
+}
+
+#navbarNav .navbar-nav a:hover
+{
+    color: var(--bluedark);
+    background-color: var(--white);
+    border-radius: 5px;
+}
+
+/* MENÚ COURSES-CATEGORY */
+.menu
+{
+    background-color: var(--bluedark);
+}
+
+.logo img
+{
+    width: 15%;
+}
+
+.course-category
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bluedark);
+    color: var(--white);
+    border-radius: 10px;
+}
+
+.course-category img
+{
+    height: 50%;
+    width: 50%;
+}
+
+.course-category:hover 
+{
+    opacity: 0.5;
+    cursor: pointer;
+    color:#fff;
+}
+
+/************** CARD CURSOS */
+.cardcursos 
+{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.box
+{
+    position: relative;
+    width: 250px;
+    height: 350px;
+    border: 2px solid var(--bluelight);
+    border-radius: 10px;
+}
+
+.box .imgBx 
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.box .imgBx img
+{
+/*     position: absolute; */
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    transition: 0.5s;
+    filter: invert(51%) sepia(12%) saturate(2893%) hue-rotate(162deg) brightness(92%) contrast(85%);
+}
+
+.box:hover .imgBx
+{
+    opacity: 0.5;
+}
+
+.box .content
+{
+    position: absolute;
+    bottom: 20px;
+    left: 10%;
+    width: 80%;
+    height: 60px;
+    background: var(--bluedark);;
+    transition: 0.5s;
+    overflow: hidden;
+    padding: 15px;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+  
+.box:hover .content
+{
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    left: 0;
+}
+
+.box h3
+{
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    color:#fff;
+}
+
+.box p
+{
+    color:#fff;
+}
+
+.box .content p, .box .content button
+{
+    margin: 10px 0 0;
+    padding: 0;
+    opacity: 0;
+    line-height: 1.2em;
+    transition: 0.5s;
+    text-align: justify;
+}
+  
+.box:hover .content p, .box:hover .content button
+{
+    opacity: 1;
+    transition-delay: 0.2s;
+} 
+/* END CARD CURSOS */
+
+/* *************RESPONSIVE MÓVIL  */
+/* CORPORTAMIENTO CSS PARA PANTALLAS <= 600PX */
+@media (max-width: 600px)
+{
+    .courses-category 
+    {
+        display: none;
+    }
+}
+
+/* CORPORTAMIENTO CSS PARA PANTALLAS => 600PX */
+@media (min-width: 600px)
+{
+     .menu-movil
+     {
+        display: none;
+    }
+}
+/* *************END RESPONSIVE MÓVIL  */
+/* END PAGE-POWERPILLS */
+
+
+/* PAGE ACADEMY */
+
+.contenedor_carousel 
+{
+    background-color: var(--bluelight);
+}
+
+.bloque_noticias h5
+{
+    padding-left: -20px;
+    padding-bottom: 20px;
+    border-bottom: 10px solid var(--bluelight);
+}
+
+.noticia 
+{
+    border-top: 3px dotted var(--bluedark);
+}
+
+/* END  */

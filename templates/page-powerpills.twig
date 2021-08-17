@@ -1,0 +1,139 @@
+{% extends "base.twig" %}
+{% block content %}
+
+{# MENÚ STICKY #}
+<nav class="navbar sticky-top menu">
+  <div class="container-fluid">
+    <a class="navbar-brand text-white" href="#">menú</a>
+  </div>
+</nav>
+{# END MENÚ STICKY #}
+
+{# SECCIÓN LOGO Y BUSCADOR #}
+<div class="container-fluid w-75 mt-5">
+    <div class="container-fluid logo">
+        <img src="{{ site.theme.link }}/static/img/LOGO_ALDI_A.png" class="img-fluid" alt="logo aldi supermercados">
+        <h1>ALDI POWERPILLS PRÓXIMAMENTE</h1>
+        <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Busca tu curso" aria-label="Search">
+            <button class="btn btn-outline-dark" type="submit">Buscar</button>
+        </form>
+    </div>
+</div>
+{# SECCIÓN END LOGO Y BUSCADOR #}
+
+{# MENÚ COURSES-CATEGORY RESPONSIVE SOLO PARA MÓVIL #}
+<nav class="menu-movil navbar navbar-expand-lg navbar-light  mt-4">
+  <div class="container-fluid">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <div class="navbar-nav d-flex align-items-center">
+        <a class="nav-link fw-bold fs-3 text-white" href="#">Liderazgo</a>
+        <a class="nav-link fw-bold fs-3 text-white" href="#">Marketing</a>
+        <a class="nav-link fw-bold fs-3 text-white" href="#">Coaching</a>
+        <a class="nav-link fw-bold fs-3 text-white" href="#">Office</a>
+        <a class="nav-link fw-bold fs-3 text-white" href="#">Equipos</a>
+        <a class="nav-link fw-bold fs-3 text-white" href="#">Venta</a>
+      </div>
+    </div>
+  </div>
+</nav>
+{# END MENÚ COURSES-CATEGORY RESPONSIVE SOLO PARA MÓVIL #}
+
+{# MENÚ COURSES-CATEGORY #}
+{# APARECEN DIFERENTES BOTONES EN FUNCIÓN DEL ROL DEL USUARIO #}
+<div class="mt-5 courses-category">
+  <div class="d-flex flex-nowrap">
+    {# BOTÓN CATEGORÍA liderazgo #}
+    <button type="button" class="btn col mx-1 course-category d-flex align-items-center p-2">
+      <img src="{{ site.theme.link }}/static/img/iconos/liderazgo.svg" alt="liderazgo">
+      <p class="text-center fs-4 mt-2">Liderazgo</p>
+    </button>
+    {# BOTÓN CATEGORÍA Marketing #}
+    <button type="button" class="btn col me-1 course-category d-flex align-items-center p-2">
+      <img src="{{ site.theme.link }}/static/img/iconos/marketing.svg" alt="marketing">
+      <p class="text-center fs-4 mt-2">Marketing</p>
+    </button>
+    {# BOTÓN CATEGORÍA coaching #}
+    <button type="button" class="btn col me-1 course-category d-flex align-items-center p-2">
+      <img src="{{ site.theme.link }}/static/img/iconos/coaching.svg" alt="coaching">
+      <p class="text-center fs-4 mt-2">Coaching</p>
+    </button>
+    {# BOTÓN CATEGORÍA Office #}
+    <button type="button" class="btn col me-1 course-category d-flex align-items-center p-2">
+      <img src="{{ site.theme.link }}/static/img/iconos/office.svg" alt="Office">
+      <p class="text-center fs-4 mt-2">Office</p>
+    </button>
+    {# BOTÓN CATEGORÍA equipos #}
+    <button type="button" class="btn col me-1 course-category d-flex align-items-center p-2">
+      <img src="{{ site.theme.link }}/static/img/iconos/equipos.svg" alt="equipos">
+      <p class="text-center fs-4 mt-2">Equipos</p>
+    </button>
+    {# BOTÓN CATEGORÍA venta #}
+    <button type="button" class="btn col me-1 course-category d-flex align-items-center p-2">
+      <img src="{{ site.theme.link }}/static/img/iconos/venta.svg" alt="venta">
+      <p class="text-center fs-4 mt-2">Venta</p>
+    </button>
+  </div>
+</div>
+{# END MENÚ COURSE-CATEGORY #}
+
+{# CARDS CURSOS #}
+<div class="container mt-4 mx-5 m-1 cardcursos ">
+
+{# EJEMPLO DE CARD CURSO. SOLO APARECEN UNA VEZ ELEGIDO LA CATEGORÍA DEL CURSO #}
+{# SON UN EJEMPLO DE CÓMO APARECERÍAN 4 CARDS #}
+  <div class="box m-1">
+    <div class="imgBx">
+      <img src="{{ site.theme.link }}/static/img/iconos/liderazgo.svg" alt="">
+    </div>
+    <div class="content">
+      <h3>Curso Liderazgo</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut 
+          labore et dolore magna aliqua.</p>
+      <button class="btn btn-outline-info mt-4 p-2">Más info</button>
+    </div>
+  </div>
+
+  <div class="box m-1">
+    <div class="imgBx">
+      <img src="{{ site.theme.link }}/static/img/iconos/liderazgo.svg" alt="">
+    </div>
+    <div class="content">
+      <h3>Curso Liderazgo</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut 
+          labore et dolore magna aliqua.</p>
+      <button class="btn btn-outline-info mt-4 p-2">Más info</button>
+    </div>
+  </div>
+
+  <div class="box m-1">
+    <div class="imgBx">
+      <img src="{{ site.theme.link }}/static/img/iconos/liderazgo.svg" alt="">
+    </div>
+    <div class="content">
+      <h3>Curso Liderazgo</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut 
+          labore et dolore magna aliqua.</p>
+      <button class="btn btn-outline-info mt-4 p-2">Más info</button>
+    </div>
+  </div>
+
+  <div class="box m-1">
+    <div class="imgBx">
+      <img src="{{ site.theme.link }}/static/img/iconos/liderazgo.svg" alt="">
+    </div>
+    <div class="content">
+      <h3>Curso Liderazgo</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut 
+          labore et dolore magna aliqua.</p>
+      <button class="btn btn-outline-info mt-4 p-2">Más info</button>
+    </div>
+  </div>
+
+</div>
+{# END CARDS CURSOS #}
+
+{% endblock %}
