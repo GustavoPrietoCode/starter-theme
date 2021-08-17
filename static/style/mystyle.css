@@ -163,26 +163,6 @@ h1, p
     transition-delay: 0.2s;
 } 
 /* END CARD CURSOS */
-
-/* *************RESPONSIVE MÓVIL  */
-/* CORPORTAMIENTO CSS PARA PANTALLAS <= 600PX */
-@media (max-width: 600px)
-{
-    .courses-category 
-    {
-        display: none;
-    }
-}
-
-/* CORPORTAMIENTO CSS PARA PANTALLAS => 600PX */
-@media (min-width: 600px)
-{
-     .menu-movil
-     {
-        display: none;
-    }
-}
-/* *************END RESPONSIVE MÓVIL  */
 /* END PAGE-POWERPILLS */
 
 
@@ -193,11 +173,20 @@ h1, p
     background-color: var(--bluelight);
 }
 
-.bloque_noticias h5
+.bloque_noticias .titulo_noticia h5
 {
     padding-left: -20px;
     padding-bottom: 20px;
+}
+
+.bloque_noticias .titulo_noticia
+{
     border-bottom: 10px solid var(--bluelight);
+}
+
+.noticia1 
+{
+    border: none;
 }
 
 .noticia 
@@ -206,3 +195,32 @@ h1, p
 }
 
 /* END  */
+
+/* *************RESPONSIVE MÓVIL  */
+/* CORPORTAMIENTO CSS PARA PANTALLAS <= 600PX */
+@media (max-width: 800px)
+{
+    /* menú courses category powerpills */
+    .courses-category 
+    {
+        display: none;
+    }
+
+    /* page academy */
+    .columna_carousel
+    {
+        margin-bottom: 30px;
+    }
+
+}
+
+/* CORPORTAMIENTO CSS PARA PANTALLAS => 600PX */
+@media (min-width: 600px)
+{
+    /* menú courses category powerpills */
+     .menu-movil
+     {
+        display: none;
+    }
+}
+/* *************END RESPONSIVE MÓVIL  */
