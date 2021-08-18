@@ -1,0 +1,74 @@
+{% extends "base.twig" %}
+{% block content %}
+
+{# MENÚ STICKY #}
+<nav class="navbar sticky-top menu">
+  <div class="container-fluid">
+    <a class="navbar-brand text-white" href="#">menú sales_academies</a>
+  </div>
+</nav>
+{# END MENÚ STICKY #}
+
+{# LOGO #}
+<div class="container-fluid w-75">
+    <div class="row my-5">
+        <div class="col">
+            <h1>ALDI SALES ACADEMIES PRÓXIMAMENTE</h1>
+        </div>
+        <div class="col-12 col-md-8 logo">
+            <img src="{{ site.theme.link }}/static/img/LOGO_ALDI_A.png" class="img-fluid" alt="logo aldi supermercados">
+        </div>
+
+    </div>
+</div>
+{# END LOGO #}
+
+{# CARDS #}
+<div class="container">
+  
+  <div class="row align-items-center">
+    <div class="col-md-4">
+
+      <div class="card text-center card_sales_academies">
+        <img src="{{ site.theme.link }}/static/img/iconos_academy_sales/School.svg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h3 class="card-title text-danger fw-bold">DESCUBRE</h3>
+          <h6 class="card-title text-danger fw-bold">STEP1</h6>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+
+    </div>
+    <div class="col-md-4">
+
+      <div class="card text-center card_sales_academies">
+        <img src="{{ site.theme.link }}/static/img/iconos_academy_sales/School.svg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h3 class="card-title text-danger fw-bold">DESCUBRE</h3>
+          <h6 class="card-title text-danger fw-bold">STEP1</h6>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+
+    </div>
+    <div class="col-md-4">
+
+      <div class="card text-center card_sales_academies">
+        <img src="{{ site.theme.link }}/static/img/iconos_academy_sales/School.svg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h3 class="card-title text-danger fw-bold">DESCUBRE</h3>
+          <h6 class="card-title text-danger fw-bold">STEP1</h6>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  
+</div>
+{# END CARDS #}
+
+{% endblock %}

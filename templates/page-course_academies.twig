@@ -28,8 +28,16 @@
     <div class="row m-3">
         {# columna con slider #}
         <div class="col-md-6 columna_carousel">
+
             <div class="border rounded-3 contenedor_carousel">
                 <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+
                     <div class="carousel-inner p-3">
                         <div class="carousel-item active">
                             <img src="{{ site.theme.link }}/static/img/slider_academy/aldi_slider01.png" class="d-block w-100 rounded-3" alt="...">
@@ -51,35 +59,35 @@
                     </button>
                 </div>
             </div>
+        
         </div>
         {# columna con news #}
-        <div class="col-md-5 offset-md-1 bloque_noticias">
+        <div class="col-md-5 offset-md-1 columna_news">
 
-            <div class="border rounded-3 border-dark">
+            <div class="border border-dark contenedor_news">
                 <div class="d-flex flex-column mb-3">
-
                     <div class="p-2 my-2 titulo_noticia">
                         <h3>News & short content</h3>
                     </div>
-
                     <div class="p-2 my-2 noticia1">
-                            <p class="fecha_noticia" >15 de agosto del 2021</p>
+                            <p class="text-danger fw-bold">15 de agosto del 2021</p>
                             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
                     </div>
                     <div class="p-2 my-2 noticia">
                         <div class="d-flex flex-column">
-                            <p>15 de agosto del 2021</p>
+                            <p class="text-danger fw-bold">15 de agosto del 2021</p>
                             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
                         </div>
                     </div>
                     <div class="p-2 my-2 noticia">
                         <div class="d-flex flex-column">
-                            <p>15 de agosto del 2021</p>
+                            <p class="text-danger fw-bold">15 de agosto del 2021</p>
                             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
                         </div>
                     </div>
                 </div>
             </div>
+
         </div>
     </div>
 </div>

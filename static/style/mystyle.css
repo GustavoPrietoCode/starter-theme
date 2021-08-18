@@ -166,22 +166,27 @@ h1, p
 /* END PAGE-POWERPILLS */
 
 
-/* PAGE ACADEMY */
+/* PAGE COURSE_ACADEMIES */
 
 .contenedor_carousel 
 {
     background-color: var(--bluelight);
 }
 
-.bloque_noticias .titulo_noticia h5
+.columna_news .titulo_noticia h5
 {
     padding-left: -20px;
     padding-bottom: 20px;
 }
 
-.bloque_noticias .titulo_noticia
+.columna_news .titulo_noticia
 {
     border-bottom: 10px solid var(--bluelight);
+}
+
+.columna_news .contenedor_news
+{
+    border-radius: 30px;
 }
 
 .noticia1 
@@ -197,7 +202,7 @@ h1, p
 /* END  */
 
 /* *************RESPONSIVE MÓVIL  */
-/* CORPORTAMIENTO CSS PARA PANTALLAS <= 600PX */
+/* CORPORTAMIENTO CSS PARA MÓVILES. PANTALLAS <= 600PX */
 @media (max-width: 800px)
 {
     /* menú courses category powerpills */
@@ -221,6 +226,11 @@ h1, p
      .menu-movil
      {
         display: none;
+    }
+
+    .card_sales_academies
+    {
+        max-width: 20rem;
     }
 }
 /* *************END RESPONSIVE MÓVIL  */
