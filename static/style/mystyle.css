@@ -273,7 +273,7 @@ h1, p
 } 
 
 /* navegadores laterales */
-.owl-theme .owl-nav [class*="owl-"] {
+.owl-nav [class*="owl-"] {
     color: white !important;
     font-size: 35px !important;
     background: #000000 !important;

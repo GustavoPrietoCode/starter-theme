@@ -5,19 +5,17 @@
     autoWidth: true,
     dots: false,
     nav: true,
-    navText: ["<div class='nav-button owl-prev'>‹</div>", "<div class='nav-button owl-next'>›</div>"],
-    responsive:{
-          0:{
-              items:1
-          },
-          600:{
-              items:3
-          },
-          1000:{
-              items:5
-          }
-      }
+    navText: ["<div class='nav-button owl-prev'>‹</div>", "<div class='nav-button owl-next'>›</div>"]
+    
   })
 
 });
-   
+
+
+
+var slider = tns({
+container: '.my-slider',
+items: 8
+
+});
+
